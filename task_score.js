@@ -23,5 +23,5 @@ let surnameStudent1 = "Ibragimov";
 let fulnameStudent1 = nameStudent1 + " " + surnameStudent1;
 let average1 = module_1_1 + module_2_2 + module_3_3;
 console.log(
-  nameStudent1.slice(0, 1) + "." + surnameStudent1 + "-" + " " + average1 / 3
+  nameStudent1.slice(0, 1) + "." + surnameStudent1 + " -" + " " + average1 / 3
 );
