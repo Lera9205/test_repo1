@@ -40,3 +40,49 @@ for (elementKey in players) {
     console.log(players[elementKey]); //выведен игрок с максимальным кол-вом очков.
   }
 }
+
+// создан абор тестовых данных  при помощи ChatGPT
+//Вывести в консоль выпускника с самым поздним годом выпуска
+
+const schoolGraduate = [
+  {
+    id: 1,
+    name: "Иванов Иван",
+    year: 2015,
+  },
+  {
+    id: 2,
+    name: "Петрова Мария",
+    year: 2016,
+  },
+  {
+    id: 3,
+    name: "Сидоров Алексей",
+    year: 2017,
+  },
+  {
+    id: 4,
+    name: "Павлова Екатерина",
+    year: 2018,
+  },
+  {
+    id: 5,
+    name: "Смирнов Дмитрий",
+    year: 2019,
+  },
+];
+
+const allYears = []; //создан пустой массив для хранения годов выпуска
+for (elementKey in schoolGraduate) {
+  allYears[elementKey] = schoolGraduate[elementKey].year; // заполняется созданный пустой массив данными из массива players
+}
+console.log(allYears);
+const maxYears = Math.max(...allYears); // рассчитать максимальное число из массива очков
+
+console.log(maxYears);
+
+for (elementKey in schoolGraduate) {
+  if (schoolGraduate[elementKey].year == maxYears) {
+    console.log(schoolGraduate[elementKey]); //выведен игрок с максимальным кол-вом очков.
+  }
+}
