@@ -75,13 +75,14 @@ const schoolGraduate = [
 const allYears = []; //создан пустой массив для хранения годов выпуска
 for (elementKey in schoolGraduate) {
   allYears[elementKey] = schoolGraduate[elementKey].year; // заполняется созданный пустой массив данными выпускных годов
-console.log(allYears);
-const maxYears = Math.max(...allYears); // рассчитать максимальное значение выпускного года
+  console.log(allYears);
+  const maxYears = Math.max(...allYears); // рассчитать максимальное значение выпускного года
 
-console.log(maxYears);
+  console.log(maxYears);
 
-for (elementKey in schoolGraduate) {
-  if (schoolGraduate[elementKey].year == maxYears) {
-    console.log(schoolGraduate[elementKey]); //выведен выпускник с самым поздним годом выпуска
+  for (elementKey in schoolGraduate) {
+    if (schoolGraduate[elementKey].year == maxYears) {
+      console.log(schoolGraduate[elementKey]); //выведен выпускник с самым поздним годом выпуска
+    }
   }
 }
